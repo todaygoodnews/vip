@@ -1,0 +1,149 @@
+<!doctype html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Maintenance</title>
+    <link rel="canonical" href="https://tester.com/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d253f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #1f2d3d;
+            padding: 250px;
+            border-radius: 50px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #f3a847;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #bbb;
+        }
+
+        .message {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .contact {
+            margin-top: 40px;
+            font-size: 16px;
+        }
+
+        .contact a {
+            color: #f3a847;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .loader {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .loader span {
+            display: block;
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            background-color: #f3a847;
+            border-radius: 50%;
+            animation: pulse 1.2s infinite ease-in-out;
+        }
+
+        .loader span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .loader span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .loader span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+    </style>
+	<script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+                e.preventDefault();
+            }
+            if (e.keyCode === 85 || (e.ctrlKey && e.keyCode === 85)) {
+                e.preventDefault();
+            }
+        });
+
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>We’re Currently Under Maintenance</h1>
+        <p>We are upgrading our website. We’ll be back online soon. Thanks for your patience!</p>  
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="message">
+            <p>Feel free to reach out to us if you need any assistance.</p>
+        </div>
+        <div class="contact">
+            <p>Contact us at <a href="/">click here</a></p>
+        </div>
+    </div>
+</body>
+</html>
